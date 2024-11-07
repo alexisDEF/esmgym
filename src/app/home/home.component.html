@@ -1,0 +1,32 @@
+<!-- Header de la page d'accueil -->
+<header class="hero">
+  <img src="../assets/logoesmgym.png" alt="Logo ESM Gym" class="hero-logo">
+    <h1 class="hero-title">Vibrez au rythme de la gym !</h1>
+  </header>
+  <img src="../../assets/logoesmgym.png">
+  <!-- Présentation du club -->
+  <section class="about">
+    <h2>Bienvenue à ESM Gym Challans</h2>
+    <p>ESM Gym est un club de gymnastique passionné par l'excellence, l'esprit d'équipe, et la performance. Nous accueillons des membres de tous niveaux, des débutants aux compétiteurs, pour partager ensemble l'amour de la gymnastique.</p>
+  </section>
+  
+  <!-- Aperçu des actualités -->
+  <section class="news-preview">
+    <h2>Dernières Actualités</h2>
+    <article *ngFor="let news of newsList" class="news-item">
+      <h3>{{ news.title }}</h3>
+      <p>{{ news.excerpt }}</p>
+      <a href="#" class="read-more">Lire plus</a>
+    </article>
+  </section>
+  
+  <!-- Événements à venir -->
+  <section class="events-preview">
+    <h2>Événements à venir</h2>
+    <article *ngFor="let event of eventsList" class="event-item">
+      <h3>{{ event.name }}</h3>
+      <p>Date : {{ event.date | date }}</p>
+      <a href="#" class="view-details">Voir les détails</a>
+    </article>
+  </section>
+  

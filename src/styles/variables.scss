@@ -1,0 +1,43 @@
+// Couleurs principales du logo
+$primary-blue: #2d3b85;  // Bleu principal du logo
+$primary-orange: #f15a22;  // Orange principal du logo
+$secondary-gray: #aaaaaa;  // Gris clair pour les nuances
+$background-white: #ffffff;  // Blanc pour les arrière-plans
+
+// Variables de typographie
+$font-primary: 'Arial', sans-serif;
+$font-secondary: 'Verdana', sans-serif;
+
+// Styles globaux
+body {
+  font-family: $font-primary;
+  background-color: $background-white;
+  color: $secondary-gray;
+}
+
+// Couleurs du thème
+.navbar {
+  background-color: $primary-blue;
+  color: $background-white;
+}
+
+.button-primary {
+  background-color: $primary-orange;
+  color: $background-white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  
+  &:hover {
+    background-color: darken($primary-orange, 10%);
+  }
+}
+
+.footer {
+  background-color: $primary-blue;
+  color: $background-white;
+  padding: 1rem;
+  text-align: center;
+}
